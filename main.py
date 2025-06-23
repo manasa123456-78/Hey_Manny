@@ -1,19 +1,40 @@
 import json
 import random as rand
+import time
+from datetime import datetime
 from speech import speak, take_user_input
 from funcs import *
 from automation import action_centre
 
-# Load Q&A DB
 with open('data.json', 'r') as fp:
     qdb = json.load(fp)
 all_ques = list(qdb.keys())
+
+def greet_user(USERNAME="Manasa"):
+    hour = datetime.now().hour
+    if 6 <= hour < 12:
+        speak(f"Good Morning {USERNAME}")
+        speak("I am very happy to see you Mam")
+        time.sleep(0.5)
+        speak("Oh wait, actually I cannot see you Mam as you didn't give me access to your webcam")
+    elif 12 <= hour < 16:
+        speak(f"Good Afternoon {USERNAME}")
+        speak("Did you have your lunch Mam?")
+        time.sleep(0.5)
+        speak("Sometimes I feel like eating real food too, Mam")
+    elif hour >= 16:
+        speak(f"Good Evening {USERNAME}")
+        speak("Hope your day went as planned Mam")
+    else:
+        speak("Good to see you awake, Mam")
+        time.sleep(0.5)
+        speak("I thought I am the only one awake")
 
 while True:
     query = take_user_input().lower()
 
     if 'hello nova' in query or 'hey nova' in query:
-        speak("Hello Mam. How can I assist you?")
+        greet_user()
         while True:
             query_1 = take_user_input().lower()
 
@@ -83,5 +104,5 @@ while True:
                 continue
 
     if 'go home' in query:
-        speak("Thanks for letting me sleep Sir. Bye.")
+        speak("Thanks for letting me sleep Mam. Bye.")
         break
