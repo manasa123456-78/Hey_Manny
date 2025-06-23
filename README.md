@@ -1,4 +1,4 @@
-# NOva – Your Personal Voice Assistant 
+# Nova – Your Personal Voice Assistant 
 
 Nova is a Python-based desktop voice assistant that recognizes natural speech, responds via text-to-speech, executes system-level actions, and learns custom Q&A responses dynamically. It supports over **20 unique voice commands** for hands-free workflows, desktop automation, and web interaction.
 
