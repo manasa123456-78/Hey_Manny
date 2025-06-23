@@ -12,8 +12,8 @@ all_ques = list(qdb.keys())
 while True:
     query = take_user_input().lower()
 
-    if 'hello luna' in query or 'hey luna' in query:
-        speak("Hello Sir. How can I assist you?")
+    if 'hello manny' in query or 'hey manny' in query:
+        speak("Hello Mam. How can I assist you?")
         while True:
             query_1 = take_user_input().lower()
 
@@ -23,8 +23,8 @@ while True:
                 speak(response)
                 continue
 
-            if query_1 == 'luna':
-                speak("Yes Sir")
+            if query_1 == 'manny':
+                speak("Yes Mam")
                 continue
 
             if 'search' in query_1 and 'google' in query_1:
@@ -72,7 +72,7 @@ while True:
                 continue
 
             if 'take rest' == query_1:
-                speak("Thank you Sir. But I'm always ready.")
+                speak("Thank you Mam. But I'm always ready.")
                 break
 
             if 'full screen' in query_1:
