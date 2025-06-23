@@ -12,7 +12,7 @@ all_ques = list(qdb.keys())
 while True:
     query = take_user_input().lower()
 
-    if 'hello dodo' in query or 'hey dodo' in query:
+    if 'hello nova' in query or 'hey nova' in query:
         speak("Hello Mam. How can I assist you?")
         while True:
             query_1 = take_user_input().lower()
