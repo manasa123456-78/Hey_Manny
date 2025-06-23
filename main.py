@@ -12,7 +12,7 @@ all_ques = list(qdb.keys())
 while True:
     query = take_user_input().lower()
 
-    if 'hello manny' in query or 'hey manny' in query:
+    if 'hello dodo' in query or 'hey dodo' in query:
         speak("Hello Mam. How can I assist you?")
         while True:
             query_1 = take_user_input().lower()
@@ -23,7 +23,7 @@ while True:
                 speak(response)
                 continue
 
-            if query_1 == 'manny':
+            if query_1 == 'dodo':
                 speak("Yes Mam")
                 continue
 
@@ -58,7 +58,7 @@ while True:
                     with open('data.json', 'r') as fp:
                         qdb = json.load(fp)
                     all_ques = list(qdb.keys())
-                    speak("Added to my database, Sir")
+                    speak("Added to my database, Mam")
                 continue
 
             if 'hotspot' in query_1:
