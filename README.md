@@ -1,12 +1,12 @@
-# Manny – Your Personal Voice Assistant 
+# NOva – Your Personal Voice Assistant 
 
-Manny is a Python-based desktop voice assistant that recognizes natural speech, responds via text-to-speech, executes system-level actions, and learns custom Q&A responses dynamically. It supports over **20 unique voice commands** for hands-free workflows, desktop automation, and web interaction.
+Nova is a Python-based desktop voice assistant that recognizes natural speech, responds via text-to-speech, executes system-level actions, and learns custom Q&A responses dynamically. It supports over **20 unique voice commands** for hands-free workflows, desktop automation, and web interaction.
 
 ---
 
 ##  Features
 -  **Voice Command Recognition:** Real-time speech-to-text processing using `SpeechRecognition` with ambient noise calibration.
--  **Dynamic Q&A Learning:** Train Manny on custom questions and answers via natural language prompts.
+-  **Dynamic Q&A Learning:** Train Nova on custom questions and answers via natural language prompts.
 -  **Text-to-Speech Feedback:** Audio responses powered by `pyttsx3` for seamless interaction.
 -  **Web Automation:** Google searches, YouTube playback, and web navigation with voice commands.
 -  **System Control:** Automates tasks like showing desktop, closing tabs, fullscreen control, and pausing/resuming media.
@@ -17,7 +17,7 @@ Manny is a Python-based desktop voice assistant that recognizes natural speech, 
 
 ##  Project Structure
 ```text
-manny-voice-assistant/
+Hey_Nova/
 ├── main.py              # Core voice assistant loop
 ├── speech.py            # Speech recognition and TTS
 ├── funcs.py             # Utility functions: search, play, Q&A training, system controls
